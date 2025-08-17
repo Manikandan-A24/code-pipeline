@@ -6,8 +6,10 @@ phases:
       - echo "nothing to install for static HTML"
   build:
     commands:
-      - echo "Zipping files..."
-      - zip -r app.zip index.html appspec.yml scripts/
+      - echo "No build step needed for static site"
+
 artifacts:
   files:
-    - app.zip
+    - appspec.yml
+    - index.html
+    - scripts/**/*
